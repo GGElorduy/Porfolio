@@ -9,7 +9,7 @@ const flagsElement = document.getElementById('flags')
 const textsToChange = document.querySelectorAll('[data-section]')
 
 const changeLanguage = async (language) => {
-  const requestJson = await fetch(`./porfolio/languages/${language}.json`)
+  const requestJson = await fetch(`/languages/${language}.json`)
   const text = await requestJson.json()
   for (const textToChange of textsToChange) {
     const section = textToChange.dataset.section

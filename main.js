@@ -1,16 +1,15 @@
-import './style.css'
-import { toggle } from './componentes/header/darkmode/DarnkMode'
+//import './style.css'
+import { toggle } from './componentes/header/darkmode/DarkMode.js'
 
 const toggleTheme = document.getElementById('toggle-theme')
 const toggleIcon = document.getElementById('toggle-icon')
 const toggleText = document.getElementById('toggle-text')
+
 const flagsElement = document.getElementById('flags')
 
 const textsToChange = document.querySelectorAll('[data-section]')
 
 const changeLanguage = async (language) => {
-  // EN - https://github.com/GGElorduy/porfolio/blob/568e03c83d84ef36a54505f6563c0805b6c010c8/languages/en_GB.json
-  // ES - https://github.com/GGElorduy/porfolio/blob/568e03c83d84ef36a54505f6563c0805b6c010c8/languages/es_ES.json
   const languageJSONpath = `./languages/${language}.json`
   const requestJson = await fetch(languageJSONpath)
   const text = await requestJson.json()

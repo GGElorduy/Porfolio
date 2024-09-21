@@ -66,6 +66,11 @@ body {
 .toggle-theme_text {
   font-size: 0, 8em;
 }
+body.dark {
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 15%);
+  --bg-card-color: hsl(0, 0%, 20%);
+}
 
 .flags {
   width: 75px;

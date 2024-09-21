@@ -1,3 +1,6 @@
+@import './componentes/header/darkmode/DarkMode.css';
+@import './componentes/header/PrimaryColor/PrimaryColor.css';
+
 * {
   box-sizing: border-box;
 }
@@ -65,25 +68,6 @@ body {
 }
 .toggle-theme_text {
   font-size: 0, 8em;
-}
-body.dark {
-  --text-color: hsl(0, 0%, 83%);
-  --bg-color: hsl(0, 0%, 15%);
-  --bg-card-color: hsl(0, 0%, 20%);
-}
-
-.flags {
-  width: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.flags-item {
-  width: 30px;
-}
-.flag-image {
-  display: block;
-  cursor: pointer;
 }
 .icon {
   width: 20px;

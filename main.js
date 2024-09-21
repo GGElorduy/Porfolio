@@ -8,7 +8,7 @@ const flagsElement = document.getElementById('flags')
 
 const textsToChange = document.querySelectorAll('[data-section]')
 
-const languageJSONpath = 'languages/'
+const languageJSONpath = ''
 
 const changeLanguage = async (language) => {
   console.log(languageJSONpath + `${language}.json`)

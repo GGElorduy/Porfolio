@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "rol": "Desarrollador Front-end",
+    "description": "Mas de 19999 años de experiencia en desarrollo web. Apasionado de las nuevas tecnologias y Star wars. En especial del ecosistema HTML y de los Wookkies"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "first-job-title": "Trust and Safety- Analista de Calidad",
+    "first-job-dates": "Febrero 2022 - Julio 2023",
+    "first-job-description": "Como un analista de calidad en TikTok,mi trabajo era garantizar que la plataforma funcione correctamente y ofrezca la mejor experiencia al usuario, identificando y solucionando problemas técnicos y de contenido.",
+    "last-job-title": "Trust and Safety- Quality Analyst",
+    "last-job-dates": "Febrero 2019  – Junio 2021",
+    "last-job-description": " Como un analista de calidad en YouTube,mi mision era asegurar que la plataforma funcione de manera óptima y que los usuarios tengan una experiencia de visualización de alta calidad. "
+  },
+  "hobbies": {
+    "first-hobbie-title": "Terapia Asistida con Animales",
+    "first-hobbie-description": "La terapia asistida con animales utiliza la interacción con animales entrenados para mejorar la salud física, emocional y social de las personas. Se emplea en diversas terapias y puede ayudar a reducir el estrés, mejorar la autoestima y fomentar la socialización."
+  },
+  "habilidades": {
+    "skill1-title": "Idiomas",
+    "Firs-skill1": "Inglés",
+    "Second-skill1": "Español",
+    "Thirth-skill1": "Portugués",
+
+    "skill2-title": "Diseño Front-End",
+
+    "skill3-title": "Trabajo en Equipo",
+    "Firs-skill3": "Individual",
+    "Second-skill3": "En equipo"
+  },
+  "project": {
+    "project1-title": "Réplica de pinterest",
+    "project1-text1": "Esta página nos permite ver diferentes tipos de imágenes mediante la búsqueda que realice un usuario.Un proyecto hecho con VITE, hecho a través de componentes para repartir y reutilizar mejor nuestro código. Se utiliza la API de unsplash para realizar las peticiones y que nos permita obtener diferentes imágenes según al búsqueda.",
+    "project1-text2": "Incorpora funcionalidades como creacion de cuenta y guardado de elementos."
+  }
+}

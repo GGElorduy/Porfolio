@@ -7,13 +7,548 @@
     <script type="module" src="./main.js" defer></script>
     <title>Porfolio</title>
   </head>
-  <body>
-    <header>
-      <h1>Javier Gil-Guijarro</h1>
-      <nav><ul class="ulHeader"></ul></nav>
-      <select id="language"></select>
+  <body class="dark">
+    <header class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img
+            id="toggle-icon"
+            src="./assets/theme/moon.svg"
+            alt="icon-theme"
+            class="toggle-theme_icon"
+          />
+          <p id="toggle-text" class="toggle-theme_text">Dark Mode</p>
+        </div>
+      </div>
+      <div id="flags" class="flags">
+        <div class="flags-item" data-language="es_ES">
+          <img src="./assets/icons/es.svg" alt="flag" class="flag-image" />
+        </div>
+        <div class="flags-item" data-language="en_GB">
+          <img src="./assets/icons/gb.svg" alt="flag" class="flag-image" />
+        </div>
+      </div>
+      <div id="toggle-colors" class="colors">
+        <div
+          data-color="hsl(214, 84%, 56%)"
+          class="colors_item colors_item--blue"
+        ></div>
+        <div
+          data-color="hsl(128, 70%, 58%)"
+          class="colors_item colors_item--green"
+        ></div>
+        <div
+          data-color="hsl(288, 90%, 51%)"
+          class="colors_item colors_item--purple"
+        ></div>
+        <div
+          data-color="hsl(41, 100%, 53%)"
+          class="colors_item colors_item--orange"
+        ></div>
+      </div>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="column column--left">
+        <!-- Profile card -->
+        <article class="card card--profile">
+          <div class="card_image-container">
+            <img src="./assets/pictures/profile.jpg" alt="profile picture" />
+          </div>
+          <div class="card_header">
+            <h2 class="card_title">FreakPowar</h2>
+            <p class="card_subtitle" data-section="profile" data-value="rol">
+              Front end Developer
+            </p>
+          </div>
+          <div class="card_body">
+            <div class="cardlink">
+              <img
+                src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717408911/Iconos/gmail_abyzzs.png"
+                alt="mail"
+                class="icon"
+              />
+              <a href="mailto:gilguijarro.elorduy@gmail.com"
+                >gilguijarro.elorduy@gmail.com</a
+              >
+            </div>
+            <div class="cardlink">
+              <img
+                src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717409611/Iconos/whatsapp_hzz4dy.png"
+                alt=""
+                class="icon"
+              />
+              <a href="tel:+34631597491">+34631597491</a>
+            </div>
+            <p
+              class="card_text"
+              data-section="profile"
+              data-value="description"
+            >
+              Mas de 19999 años de experiencia en desarrollo web. Apasionado de
+              las nuevas tecnologias y Star wars. En especial del ecosistema
+              HTML y de los Wookkies
+            </p>
+          </div>
+        </article>
+        <article class="card card-experience">
+          <h2 class="card_title" data-section="experience" data-value="title">
+            Experiences
+          </h2>
+          <div class="experience">
+            <img
+              src="./assets/pictures/logotiktok.png"
+              alt="logo"
+              class="experience-image"
+            />
+            <div class="experience_info">
+              <p
+                class="experience_time"
+                data-section="experience"
+                data-value="first-job-dates"
+              >
+                Febrero 2017 - Currently
+              </p>
+              <h3
+                class="experience_job"
+                data-section="experience"
+                data-value="first-job-title"
+              >
+                Trust and Safety- Quality Analyst
+              </h3>
+              <p
+                class="experience_description"
+                data-section="experience"
+                data-value="first-job-description"
+              >
+                This role has the following duties and responsibilities. Support
+                the Team Lead in managing the team when needed
+              </p>
+            </div>
+          </div>
+          <div class="experience">
+            <img
+              src="./assets/pictures/logo-youtube.png"
+              alt="logo"
+              class="experience-image"
+            />
+            <div class="experience_info">
+              <p
+                class="experience_time"
+                data-section="experience"
+                data-value="last-job-dates"
+              >
+                Febrero 2017 - Currently
+              </p>
+              <h3
+                class="experience_job"
+                data-section="experience"
+                data-value="last-job-title"
+              >
+                Trust and Safety- Quality Analyst
+              </h3>
+              <p
+                class="experience_description"
+                data-section="experience"
+                data-value="last-job-description"
+              >
+                This role has the following duties and responsibilities. Support
+                the Team Lead in managing the team when needed
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="card card-hobies">
+          <h2 class="card_title">Hobbies</h2>
+          <div class="card_image-container">
+            <img src="./assets/pictures/hobbie1.jpg" alt="hobbie" />
+          </div>
+          <h3
+            class="hobbie_title"
+            data-section="hobbies"
+            data-value="first-hobbie-title"
+          >
+            Terapia de Mascotas
+          </h3>
+          <p
+            class="card_text"
+            data-section="hobbies"
+            data-value="first-hobbie-description"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            maiores nostrum porro commodi vel sequi eos cum architecto sint,
+            quia omnis explicabo suscipit asperiores voluptatibus itaque
+            laboriosam eius deleniti incidunt!
+          </p>
+        </article>
+      </section>
+      <section class="column column--right">
+        <article class="card">
+          <h2
+            class="card_title"
+            data-section="habilidades"
+            data-value="skill1-title"
+          >
+            Idiomas
+          </h2>
+          <small>Lvl</small>
+          <div class="skills_header">
+            <span class="skills_start-level">0</span>
+            <span class="skills_start-level">5</span>
+          </div>
+          <div class="skills">
+            <div class="skills_item">
+              <p
+                class="skills_tech"
+                data-section="habilidades"
+                data-value="Firs-skill1"
+              >
+                Inglés
+              </p>
+              <div class="skills_bar skills_bar--80"></div>
+            </div>
+            <div class="skills_item">
+              <p
+                class="skills_tech"
+                data-section="habilidades"
+                data-value="Second-skill1"
+              >
+                Español
+              </p>
+              <div class="skills_bar skills_bar--100"></div>
+            </div>
+            <div class="skills_item">
+              <p
+                class="skills_tech"
+                data-section="habilidades"
+                data-value="Thirth-skill1"
+              >
+                Portugués
+              </p>
+              <div class="skills_bar skills_bar--60"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2
+            class="card_title"
+            data-section="habilidades"
+            data-value="skill2-title"
+          >
+            Diseño Front End
+          </h2>
+          <small>Lvl</small>
+          <div class="skills_header">
+            <span class="skills_start-level">0</span>
+            <span class="skills_start-level">5</span>
+          </div>
+          <div class="skills">
+            <div class="skills_item">
+              <p class="skills_tech">HTML</p>
+              <div class="skills_bar skills_bar--70"></div>
+            </div>
+            <div class="skills_item">
+              <p class="skills_tech">CSS</p>
+              <div class="skills_bar skills_bar--60"></div>
+            </div>
+            <div class="skills_item">
+              <p class="skills_tech">JS</p>
+              <div class="skills_bar skills_bar--70"></div>
+            </div>
+            <div class="skills_item">
+              <p class="skills_tech">React</p>
+              <div class="skills_bar skills_bar--20"></div>
+            </div>
+            <div class="skills_item">
+              <p class="skills_tech">PHP</p>
+              <div class="skills_bar skills_bar--10"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2
+            class="card_title"
+            data-section="habilidades"
+            data-value="skill3-title"
+          >
+            Trabajo en equipo
+          </h2>
+          <small>Años de experiencia</small>
+          <div class="skills_header">
+            <span class="skills_start-level">0</span>
+            <span class="skills_start-level">5</span>
+          </div>
+          <div class="skills">
+            <div class="skills_item">
+              <p
+                class="skills_tech"
+                data-section="habilidades"
+                data-value="Firs-skill3"
+              >
+                Trabajo Individual
+              </p>
+              <div class="skills_bar skills_bar--90"></div>
+            </div>
+            <div class="skills_item">
+              <p
+                class="skills_tech"
+                data-section="habilidades"
+                data-value="Second-skill3"
+              >
+                Trabajo en equipo
+              </p>
+              <div class="skills_bar skills_bar--100"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-project">
+          <div class="card_image-container">
+            <img
+              src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717237257/Proyects/ScreenShot_Tool_-20240601121946_cpwe7s.png"
+              alt="Réplica de pinterest"
+              class="card-image"
+            />
+          </div>
+          <div class="project">
+            <div class="project_tags">
+              <span class="project_tag">#HTML</span>
+              <span class="project_tag">#CSS</span>
+              <span class="project_tag">#JS</span>
+              <span class="project_tag">#Responsive</span>
+            </div>
+            <h2
+              class="card_title"
+              data-section="project"
+              data-value="project1-title"
+            >
+              Réplica de pinterest
+            </h2>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text1"
+            >
+              Esta página nos permite ver diferentes tipos de imágenes mediante
+              la búsqueda que realice un usuario.Un proyecto hecho con VITE,
+              hecho a través de componentes para repartir y reutilizar mejor
+              nuestro código. Se utiliza la API de unsplash para realizar las
+              peticiones y que nos permita obtener diferentes imágenes según al
+              búsqueda.
+            </p>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text2"
+            >
+              Incorpora funcionalidades como creacion de cuenta y guardado de
+              elementos
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card-project">
+          <div class="card_image-container">
+            <img
+              src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717237257/Proyects/ScreenShot_Tool_-20240601121946_cpwe7s.png"
+              alt="Réplica de pinterest"
+              class="card-image"
+            />
+          </div>
+          <div class="project">
+            <div class="project_tags">
+              <span class="project_tag">#HTML</span>
+              <span class="project_tag">#CSS</span>
+              <span class="project_tag">#JS</span>
+              <span class="project_tag">#Responsive</span>
+            </div>
+            <h2
+              class="card_title"
+              data-section="project"
+              data-value="project1-title"
+            >
+              Réplica de pinterest
+            </h2>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text1"
+            >
+              Esta página nos permite ver diferentes tipos de imágenes mediante
+              la búsqueda que realice un usuario.Un proyecto hecho con VITE,
+              hecho a través de componentes para repartir y reutilizar mejor
+              nuestro código. Se utiliza la API de unsplash para realizar las
+              peticiones y que nos permita obtener diferentes imágenes según al
+              búsqueda.
+            </p>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text2"
+            >
+              Incorpora funcionalidades como creacion de cuenta y guardado de
+              elementos
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card-project">
+          <div class="card_image-container">
+            <img
+              src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717237257/Proyects/ScreenShot_Tool_-20240601121946_cpwe7s.png"
+              alt="Réplica de pinterest"
+              class="card-image"
+            />
+          </div>
+          <div class="project">
+            <div class="project_tags">
+              <span class="project_tag">#HTML</span>
+              <span class="project_tag">#CSS</span>
+              <span class="project_tag">#JS</span>
+              <span class="project_tag">#Responsive</span>
+            </div>
+            <h2
+              class="card_title"
+              data-section="project"
+              data-value="project1-title"
+            >
+              Réplica de pinterest
+            </h2>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text1"
+            >
+              Esta página nos permite ver diferentes tipos de imágenes mediante
+              la búsqueda que realice un usuario.Un proyecto hecho con VITE,
+              hecho a través de componentes para repartir y reutilizar mejor
+              nuestro código. Se utiliza la API de unsplash para realizar las
+              peticiones y que nos permita obtener diferentes imágenes según al
+              búsqueda.
+            </p>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text2"
+            >
+              Incorpora funcionalidades como creacion de cuenta y guardado de
+              elementos
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card-project">
+          <div class="card_image-container">
+            <img
+              src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717237257/Proyects/ScreenShot_Tool_-20240601121946_cpwe7s.png"
+              alt="Réplica de pinterest"
+              class="card-image"
+            />
+          </div>
+          <div class="project">
+            <div class="project_tags">
+              <span class="project_tag">#HTML</span>
+              <span class="project_tag">#CSS</span>
+              <span class="project_tag">#JS</span>
+              <span class="project_tag">#Responsive</span>
+            </div>
+            <h2
+              class="card_title"
+              data-section="project"
+              data-value="project1-title"
+            >
+              Réplica de pinterest
+            </h2>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text1"
+            >
+              Esta página nos permite ver diferentes tipos de imágenes mediante
+              la búsqueda que realice un usuario.Un proyecto hecho con VITE,
+              hecho a través de componentes para repartir y reutilizar mejor
+              nuestro código. Se utiliza la API de unsplash para realizar las
+              peticiones y que nos permita obtener diferentes imágenes según al
+              búsqueda.
+            </p>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text2"
+            >
+              Incorpora funcionalidades como creacion de cuenta y guardado de
+              elementos
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card-project">
+          <div class="card_image-container">
+            <img
+              src="https://res.cloudinary.com/dbnbfpype/image/upload/v1717237257/Proyects/ScreenShot_Tool_-20240601121946_cpwe7s.png"
+              alt="Réplica de pinterest"
+              class="card-image"
+            />
+          </div>
+          <div class="project">
+            <div class="project_tags">
+              <span class="project_tag">#HTML</span>
+              <span class="project_tag">#CSS</span>
+              <span class="project_tag">#JS</span>
+              <span class="project_tag">#Responsive</span>
+            </div>
+            <h2
+              class="card_title"
+              data-section="project"
+              data-value="project1-title"
+            >
+              Réplica de pinterest
+            </h2>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text1"
+            >
+              Esta página nos permite ver diferentes tipos de imágenes mediante
+              la búsqueda que realice un usuario.Un proyecto hecho con VITE,
+              hecho a través de componentes para repartir y reutilizar mejor
+              nuestro código. Se utiliza la API de unsplash para realizar las
+              peticiones y que nos permita obtener diferentes imágenes según al
+              búsqueda.
+            </p>
+            <p
+              class="card_text"
+              data-section="project"
+              data-value="project1-text2"
+            >
+              Incorpora funcionalidades como creacion de cuenta y guardado de
+              elementos
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

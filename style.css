@@ -1,9 +1,12 @@
-@import './componentes/header/darkmode/DarkMode.css';
-@import './componentes/header/PrimaryColor/PrimaryColor.css';
-
 * {
   box-sizing: border-box;
 }
+body.dark {
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 15%);
+  --bg-card-color: hsl(0, 0%, 20%);
+}
+
 :root {
   --primary-color: hsl(214, 84%, 56%);
   --text-color: hsl(0, 0%, 31%);
@@ -73,6 +76,22 @@ body {
   width: 20px;
   margin-right: 1em;
 }
+
+/* Flags */
+
+.flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags-item {
+  width: 30px;
+}
+.flag-image {
+  display: block;
+  cursor: pointer;
+}
 /* COLORS */
 
 .colors {
@@ -90,16 +109,16 @@ body {
   background-color: var(--primary-color);
 }
 .colors_item--blue {
-  --primary-color: hsl(214, 84%, 56%);
+  --primary-color: hsl(214, 58%, 48%);
 }
 .colors_item--green {
-  --primary-color: hsl(128, 70%, 58%);
+  --primary-color: hsl(128, 52%, 56%);
 }
 .colors_item--purple {
-  --primary-color: hsl(288, 90%, 51%);
+  --primary-color: hsl(288, 72%, 46%);
 }
 .colors_item--orange {
-  --primary-color: hsl(41, 100%, 53%);
+  --primary-color: hsl(41, 62%, 44%);
 }
 
 a {

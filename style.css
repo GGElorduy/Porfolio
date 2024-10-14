@@ -45,7 +45,7 @@ body {
   transition: var(--transition);
   font-family: sans-serif;
 }
-.header {
+.headerClass {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,71 +54,10 @@ body {
   background-color: var(--bg-card-color);
   transition: var(--transition);
 }
-.switches {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.toggle-theme {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.toggle-theme_icon {
-  margin-right: 0.5em;
-  width: 20px;
-}
-.toggle-theme_text {
-  font-size: 0, 8em;
-}
+
 .icon {
   width: 20px;
   margin-right: 1em;
-}
-
-/* Flags */
-
-.flags {
-  width: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.flags-item {
-  width: 30px;
-}
-.flag-image {
-  display: block;
-  cursor: pointer;
-}
-/* COLORS */
-
-.colors {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 20px;
-  width: 100px;
-}
-.colors_item {
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--text-color);
-  cursor: pointer;
-  background-color: var(--primary-color);
-}
-.colors_item--blue {
-  --primary-color: hsl(214, 58%, 48%);
-}
-.colors_item--green {
-  --primary-color: hsl(128, 52%, 56%);
-}
-.colors_item--purple {
-  --primary-color: hsl(288, 72%, 46%);
-}
-.colors_item--orange {
-  --primary-color: hsl(41, 62%, 44%);
 }
 
 a {
@@ -131,12 +70,12 @@ img {
   overflow: hidden;
 }
 main {
-  padding: 2em;
   display: grid;
   gap: 0.5em;
 }
 @media (min-width: 720px) {
   .main {
+    padding: 2em;
     grid-template-columns: min-content 1fr;
   }
 }
@@ -258,33 +197,6 @@ main {
 }
 .skills_bar--100::after {
   --skills-bar-length: 100%;
-}
-.experience {
-  display: flex;
-  align-items: start;
-  margin-bottom: 1em;
-  padding: 1em;
-  border: 2px solid var(--primary-color);
-  border-radius: var(--rtc-border-radius);
-  transition: var(--transition);
-}
-.experience-image {
-  max-width: 15%;
-  margin-right: 1em;
-}
-.experience_time {
-  font-size: 0.8rem;
-  margin-bottom: 0.5em;
-}
-.experience_job {
-  margin: 0;
-  margin-bottom: 0.5em;
-  color: var(--primary-color);
-  transition: var(--transition);
-}
-.experience_description {
-  font-size: 0.8rem;
-  margin-bottom: 1.5rem;
 }
 
 .card-project {

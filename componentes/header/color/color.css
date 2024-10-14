@@ -1,0 +1,26 @@
+.colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100px;
+}
+.colors_item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.colors_item--blue {
+  --primary-color: hsl(214, 58%, 48%);
+}
+.colors_item--green {
+  --primary-color: hsl(128, 52%, 56%);
+}
+.colors_item--purple {
+  --primary-color: hsl(288, 72%, 46%);
+}
+.colors_item--orange {
+  --primary-color: hsl(41, 62%, 44%);
+}

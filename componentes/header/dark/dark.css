@@ -1,0 +1,23 @@
+body.dark {
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 15%);
+  --bg-card-color: hsl(0, 0%, 20%);
+}
+.switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.toggle-theme_icon {
+  margin-right: 0.5em;
+  width: 20px;
+}
+.toggle-theme_text {
+  font-size: 0, 8em;
+}
